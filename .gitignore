@@ -2,4 +2,32 @@ venv/
 __pycache__/
 *.pyc
 .env
+.env.*
+!.env.example
 .ipynb_checkpoints/
+
+# Firebase & Cloud Credentials
+*serviceAccountKey*.json
+*firebase-adminsdk*.json
+google-services.json
+firebase_credentials.json
+
+# Local Runtime and Debug Artifacts
+results/detected_components/*.png
+results/detected_tracks/*.png
+results/diagnostic_reports/*.json
+results/diagnostic_reports/*.pdf
+results/debug/
+results/storage/
+results/analyses/
+results/auth/
+
+# Large Datasets & Vector Stores
+data/raw/
+data/processed/
+data/test/
+data/chroma_db/
+data/vectorstore/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/test/.gitkeep
